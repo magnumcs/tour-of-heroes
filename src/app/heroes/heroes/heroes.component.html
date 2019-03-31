@@ -1,17 +1,42 @@
-<h2>{{hero.name | uppercase}} Details</h2>
-<div><span>id: </span>{{hero.id}}</div>
-<div><span>name: </span>{{hero.name}}</div>
-<div>
-  <label>name:
-    <input [(ngModel)]="hero.name" placeholder="name"/>
-  </label>
+<div class="card" style="margin-bottom: 5px">
+<div class="card-header">
+  <button title="Adicionar novo herói" [routerLink]="['hero']" type="button" class="btn btn-warning"><strong>Novo</strong></button>
 </div>
-<div>
-  <h2>My Heroes</h2>
-  <ul class="heroes">
-    <li *ngFor="let hero of heroes">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </li>
-  </ul>
+</div>
+<div class="card">
+  <div class="card-header">
+    <h2>Meus Heróis</h2>
+    <div style="text-align: center">
+      <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let hero of heroes">
+          <td>{{hero.id}}</td>
+          <td>{{hero.name}}</td>
+          <td>
+            <button routerLink="/detail/{{hero.id}}" title="Detalhes" class="btn btn-success"><i class="fa fa-eye"></i></button>
+            <div class="divider"></div>
+            <button title="Editar" class="btn btn-info"><i class="fa fa-edit"></i></button>
+            <div class="divider"></div>
+            <button title="Remover" class="btn badge-danger"><i class="fa fa-trash"></i></button>
+          </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Ações</th>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
 </div>
 
