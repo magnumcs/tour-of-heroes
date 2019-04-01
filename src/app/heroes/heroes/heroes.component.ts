@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Hero} from '../hero.model';
 import {HeroService} from '../hero.service';
 
@@ -8,6 +8,7 @@ import {HeroService} from '../hero.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+  @Input() hero: Hero;
   heroes: Hero[];
 
   constructor(private heroService: HeroService) {
