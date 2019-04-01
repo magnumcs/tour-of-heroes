@@ -22,13 +22,14 @@ export class HeroComponent implements OnInit {
   }
 
   onSubmit() {
+    this.addHero(this.hero.name);
   }
 
   addHero(name: string): void {
     name = name.trim();
     if (!name) { return; }
     this.heroService.addHero({ name } as Hero)
-      .subscribe(() => this.router.navigate(['pesca/lista']));
+      .subscribe(() => this.router.navigate(['/heroes']));
   }
 
 }
