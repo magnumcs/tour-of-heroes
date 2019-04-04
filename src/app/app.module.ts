@@ -27,7 +27,7 @@ import { ModalComponent } from './modal/modal.component';
     HomeComponent,
     HeroDetailComponent,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
