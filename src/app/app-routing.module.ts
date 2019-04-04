@@ -6,7 +6,9 @@ import {HeroComponent} from './heroes/hero/hero.component';
 import {HeroDetailComponent} from './heroes/hero-detail/hero-detail.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', loadChildren: './login/login.module#LoginModule'},
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'heroes', component: HeroesComponent },
   { path: 'home', component: HomeComponent },
   { path: 'heroes/hero', component: HeroComponent },

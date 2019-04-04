@@ -29,12 +29,20 @@ body, input[type="text"], button {
   padding: .5rem 1rem;
   background-color: #336699;
   margin-bottom: 10px;
+  height: 50px;
 }
 
 .footer {
   margin-top: 5px;
   background-color: #336699;
   color: #ffffff;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+.footer-copyright.text-center.py-3 {
+  padding-top: 10px !important;
 }
 
 .container {

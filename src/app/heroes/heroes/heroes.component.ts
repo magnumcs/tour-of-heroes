@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {Hero} from '../hero.model';
 import {HeroService} from '../hero.service';
 
@@ -10,6 +10,7 @@ import {HeroService} from '../hero.service';
 export class HeroesComponent implements OnInit {
   @Input() hero: Hero;
   heroes: Hero[];
+  p = 1;
 
   constructor(private heroService: HeroService) {
     heroService.getHeroes().subscribe(heroes => this.heroes = heroes);

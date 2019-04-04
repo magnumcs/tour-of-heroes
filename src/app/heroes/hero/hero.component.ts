@@ -22,13 +22,11 @@ export class HeroComponent implements OnInit {
   }
 
   onSubmit() {
-    this.addHero(this.hero.name);
+    this.addHero(this.heroForm.value);
   }
 
-  addHero(name: string): void {
-    name = name.trim();
-    if (!name) { return; }
-    this.heroService.addHero({ name } as Hero)
+  addHero(hero: any): void {
+    this.heroService.addHero(hero)
       .subscribe(() => this.router.navigate(['/heroes']));
   }
 
