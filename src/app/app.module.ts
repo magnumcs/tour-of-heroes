@@ -16,6 +16,7 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import { FooterComponent } from './footer/footer.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ModalComponent } from './modal/modal.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ModalComponent } from './modal/modal.component';
     HeroDetailComponent,
     FooterComponent,
     ModalComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
