@@ -23,13 +23,12 @@
             <div class="divider"></div>
             <button title="Editar" class="btn btn-info"><i class="fa fa-edit"></i></button>
             <div class="divider"></div>
-            <button title="Remover" data-toggle="modal" class="btn badge-danger"><i class="fa fa-trash"></i></button>
+            <button title="Remover" (click)="open(hero)" class="btn badge-danger"><i class="fa fa-trash"></i></button>
           </td>
         </tr>
         </tbody>
       </table>
       <pagination-controls previousLabel="Anterior" nextLabel="Próximo" (pageChange)="p = $event"></pagination-controls>
-      <!--<app-modal [title]="Teste" [message]="Teste" [button1]="Sim" [button2]="Não"></app-modal>-->
     </div>
   </div>
 </div>

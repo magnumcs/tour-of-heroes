@@ -4,14 +4,15 @@
 }
 
 body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
+  background: #33699c;
+  background: linear-gradient(to right, #315f90, #388fc7);
 }
 
 .card-signin {
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  width: 350px;
 }
 
 .card-signin .card-title {
@@ -104,4 +105,12 @@ body {
 .btn-facebook {
   color: white;
   background-color: #3b5998;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  text-align: center;
 }
