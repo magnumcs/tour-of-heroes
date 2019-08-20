@@ -8,7 +8,7 @@ import {MainComponent} from './main/main.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', loadChildren: './login/login.module#LoginModule'},
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
   { path: '', component: MainComponent, children: [
       { path: 'home', component: HomeComponent },
       { path: 'heroes', component: HeroesComponent },
