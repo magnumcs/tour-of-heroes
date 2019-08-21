@@ -40,7 +40,7 @@ import {BrowserModule} from '@angular/platform-browser';
     ReactiveFormsModule,
     AngularFontAwesomeModule,
     NgxPaginationModule,
-    NgbModule.forRoot()
+    NgbModule
   ],
   providers: [HeroService, HttpClient, NgbActiveModal],
   bootstrap: [AppComponent],

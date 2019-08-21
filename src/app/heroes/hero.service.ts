@@ -3,7 +3,7 @@ import {Observable, of} from 'rxjs';
 import {Hero} from './hero.model';
 import {HEROES_API} from '../mock-heroes';
 import {catchError, tap} from 'rxjs/operators';
-import {MessageService} from '../messageservice.service';
+import {MessageService} from '../message.service';
 import {HttpClient} from '@angular/common/http';
 
 @Injectable({
