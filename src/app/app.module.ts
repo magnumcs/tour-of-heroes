@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +17,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { ModalComponent } from './modal/modal.component';
 import { MainComponent } from './main/main.component';
 import {NgbActiveModal, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
