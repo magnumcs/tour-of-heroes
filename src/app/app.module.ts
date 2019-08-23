@@ -18,6 +18,7 @@ import { ModalComponent } from './modal/modal.component';
 import { MainComponent } from './main/main.component';
 import {NgbActiveModal, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserModule} from '@angular/platform-browser';
+import { HeroEditComponent } from './heroes/hero-edit/hero-edit.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {BrowserModule} from '@angular/platform-browser';
     FooterComponent,
     ModalComponent,
     MainComponent,
+    HeroEditComponent,
   ],
   imports: [
     BrowserModule,

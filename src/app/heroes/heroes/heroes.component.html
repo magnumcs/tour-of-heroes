@@ -21,7 +21,7 @@
           <td>
             <button routerLink="/detail/{{hero.id}}" title="Detalhes" class="btn btn-success"><i class="fa fa-eye"></i></button>
             <div class="divider"></div>
-            <button title="Editar" class="btn btn-info"><i class="fa fa-edit"></i></button>
+            <button routerLink="/edit/{{hero.id}}" title="Editar" class="btn btn-info"><i class="fa fa-edit"></i></button>
             <div class="divider"></div>
             <button title="Remover" (click)="open(hero)" class="btn badge-danger"><i class="fa fa-trash"></i></button>
           </td>

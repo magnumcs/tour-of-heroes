@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    <h2>Editar Herói</h2>
+    <div *ngIf="hero">
+      <form [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Nome</label>
+          <input formControlName="name" name="name" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-warning">Salvar</button>
+      </form>
+    </div>
+  </div>
+</div>

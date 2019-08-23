@@ -5,6 +5,7 @@ import {HeroComponent} from './heroes/hero/hero.component';
 import {HeroDetailComponent} from './heroes/hero-detail/hero-detail.component';
 import {HomeComponent} from './home/home.component';
 import {MainComponent} from './main/main.component';
+import {HeroEditComponent} from './heroes/hero-edit/hero-edit.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: 'heroes', component: HeroesComponent },
       { path: 'heroes/hero', component: HeroComponent },
       { path: 'detail/:id', component: HeroDetailComponent },
+      { path: 'edit/:id', component: HeroEditComponent },
     ]},
 ];
 
